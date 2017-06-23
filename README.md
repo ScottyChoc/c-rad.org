@@ -1,16 +1,18 @@
-# Genesis Sample Theme
+# c-rad.org
 
-Github project link: https://github.com/copyblogger/genesis-sample/
+C-RAD child theme for the Genesis framework
 
+TO DO:
 
-## Installation Instructions
-
-1. Upload the Genesis Sample theme folder via FTP to your wp-content/themes/ directory. (The Genesis parent theme needs to be in the wp-content/themes/ directory as well.)
-2. Go to your WordPress dashboard and select Appearance.
-3. Activate the Genesis Sample theme.
-4. Inside your WordPress dashboard, go to Genesis > Theme Settings and configure them to your liking.
-
-
-## Theme Support
-
-Please visit http://my.studiopress.com/help/ for theme support.
+* style footer
+* style blog page 
+* remove extrs blog meta: author/cat etc
+* fix sponsor container to match front page
+* redirect to members page after login and logout
+* add featured images to blog listings and blog pages
+* add fields to directory- agency/dog/contact
+* hook into MC for member post notifications
+* add bbpress and secure it for members only
+* add woocommerce
+* update manager roles for user and store admin
+* integrate blog/featured content into front page
