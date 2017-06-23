@@ -1,0 +1,37 @@
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 40px;
+	.widget {
+		background-color: #fff;
+		padding: 40px;
+	}
+}
+.members-sidebar {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-bottom: 40px;
+	.widget {
+		background-color: #fff;
+		padding: 0;
+		a {
+			display: block;
+			padding: 16px;
+			&:focus, &:hover {
+				color: $white;
+				background-color: $blue;
+				text-decoration: none;
+			}
+		}
+		ul > li {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			&:last-of-type {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

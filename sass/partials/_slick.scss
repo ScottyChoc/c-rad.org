@@ -1,0 +1,127 @@
+/* Slider */
+
+.slide-1 {
+    background: center cen
+}
+
+.slider-container {
+    height: 60vh;
+}
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+
+.slide-1 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/1.jpg');
+}
+.slide-2 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/2.jpg');
+}
+.slide-3 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/3.jpg');
+}
+.slide-4 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/4.jpg');
+}
+.slide-5 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/5.jpg');
+}
+.slide-6 {
+    background: center center / cover url('/wp-content/themes/c-rad/images/slides/6.jpg');
+}
+
+.slick-slide {
+    width: 100%;
+    float: left;
+    height: 60vh;
+    min-height: 1px;
+    [dir="rtl"] & {
+        float: right;
+    }
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}

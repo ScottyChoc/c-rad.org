@@ -1,0 +1,107 @@
+/* # Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+	background-color: #fff;
+	border-top: 1px solid #eee;
+	font-size: 16px;
+	font-size: 1.6rem;
+	line-height: 1;
+	padding: 60px 0;
+	// text-align: center;
+	p {
+		margin-bottom: 0;
+	}
+	input, select, textarea {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		color: #333;
+		font-size: 18px;
+		font-size: 1.8rem;
+		font-weight: 400;
+		padding: 4px;
+		width: 100%;
+	}
+}
+
+/* Footer Social Icons
+--------------------------------------------- */
+
+.social {
+	display: inline-block;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	li {
+		display: inline-block;
+		margin: 12px;
+		margin: 1.2rem;
+	}
+	a, svg {
+		display: block;
+	}
+	a {
+		position: relative;
+		height: 36px;
+		height: 3.6rem;
+		width: 36px;
+		width: 3.6rem;
+	}
+	svg {
+		height: 100%;
+		width: 100%;
+	}
+	em {
+		font-size: 14px;
+		line-height: 1.5;
+		margin-top: -0.75em;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover {
+	border-radius: 100%;
+	color: #fff;
+	fill: #fff;
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	// -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+	// transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+	// transition: background-color 0.5s, transform 0.5s ease-out;
+	// transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+
+.facebook {
+	color: $blue;
+	fill: $blue;
+	&:hover {
+		background: $blue;
+	}
+}
+
+.twitter {
+	color: $blue;
+	fill: $blue;
+	&:hover {
+		background: $blue;
+	}
+}
+
+.instagram {
+	color: $blue;
+	fill: $blue;
+	&:hover {
+		background: $blue;
+	}
+}
+
+.copyright {
+	clear: left;
+}
