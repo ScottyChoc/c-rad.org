@@ -1,11 +1,15 @@
-<div class="one-fourth first">
+<div class="footer-col-group">
+<div class="one-fourth footer-section first">
 	<h3>Contact Us</h3>
-	<img src="http://www.placemorty.us/300/80" alt="">
-	<p><strong><?php bloginfo( 'description' ); ?></strong><br>PO Box 1985<br>Frisco, CO 80443</p>
+	<h4 class="footer-logo" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/images/logo-white.png');"><?php bloginfo( 'name' ); ?></h4>
+	<p class="address">
+		<p><?php bloginfo( 'description' ); ?></p>
+		<p>PO Box 1985 <br>Frisco, CO 80443 </p>
+	</p>
 
 </div>
 
-<div class="one-fourth">
+<div class="one-fourth footer-section">
 	<h3>Follow Us</h3>
 	<ul class="social">
 		<li>
@@ -37,32 +41,30 @@
 	</ul>
 
 </div>
-
-<div class="one-fourth">
+</div>
+<div class="footer-col-group">
+<div class="one-fourth footer-section">
 
 	<h3>Stay Informed</h3>
-	<div id="mc_embed_signup">
-		<form action="//c-rad.us15.list-manage.com/subscribe/post?u=0c263aa56cd1f623bfde4784a&amp;id=bce804a711" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-			<div id="mc_embed_signup_scroll">
-			
-		<div class="mc-field-group">
-			<label for="mce-EMAIL">Email Address </label>
-			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+
+<div id="mc_embed_signup">
+<form action="//c-rad.us15.list-manage.com/subscribe/post?u=0c263aa56cd1f623bfde4784a&amp;id=bce804a711" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0c263aa56cd1f623bfde4784a_bce804a711" tabindex="-1" value=""></div>
+		<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 		</div>
-			<div id="mce-responses" class="clear">
-				<div class="response" id="mce-error-response" style="display:none"></div>
-				<div class="response" id="mce-success-response" style="display:none"></div>
-			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0c263aa56cd1f623bfde4784a_bce804a711" tabindex="-1" value=""></div>
-			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-			</div>
-		</form>
-	</div>
-	<p>News, events, and volunteer opportunities.</p>
+</form>
+</div>
+
+
+	<p>We won't spam or share your email address </p>
 
 </div>
 
-<div class="one-fourth">
+<div class="one-fourth footer-section">
 
 	<h3>Site Menu</h3>
 	<?php genesis_widget_area( 'footer-1', array(
@@ -70,6 +72,7 @@
 		'after' => '',
 	) ); ?>
 
+</div>
 </div>
 
 <div class="copyright">

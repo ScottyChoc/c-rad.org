@@ -15,40 +15,40 @@
 		text-align: left;
 		&.members-link {
 			a {
-				color: $white;
+				color: $crad-white;
 				display: block;
 				padding: 20px;
-				border: 2px solid $white;
+				border: 2px solid $crad-white;
 				text-decoration: none;
 				&:focus, &:hover {
-					color: $blue;
-					background-color: $white;
-					border: 2px solid $white;
+					color: $crad-blue;
+					background-color: $crad-white;
+					border: 2px solid $crad-white;
 					text-decoration: none;
 				}
 			}
 		}
 	}
 	a {
-		color: $white;
+		color: $crad-white;
 		display: block;
 		padding: 20px;
 		text-decoration: none;
 		&:focus, &:hover {
-			color: $white;
+			color: $crad-white;
 			text-decoration: none;
-			border-bottom: 2px solid $white;
+			border-bottom: 2px solid $crad-white;
 		}
 	}
 	.current-menu-item > a {
-		color: $white;
+		color: $crad-white;
 		text-decoration: none;
-		border-bottom: 2px solid $white;
+		border-bottom: 2px solid $crad-white;
 	}
 	.sub-menu {
 		.current-menu-item > a {
 			&:focus, &:hover {
-				color: $white;
+				color: $crad-white;
 				text-decoration: underline;
 			}
 		}

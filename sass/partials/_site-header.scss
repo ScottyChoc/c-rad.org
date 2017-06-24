@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-	background-color: $blue;
+	background-color: $crad-blue;
 	> .wrap {
 		padding: 20px 0;
 	}
@@ -34,10 +34,10 @@
 	font-weight: 700;
 	line-height: 1.2;
 	a {
-		color: $white;
+		color: $crad-white;
 		text-decoration: none;
 		&:focus, &:hover {
-			color: $white;
+			color: $crad-white;
 			text-decoration: none;
 		}
 	}
@@ -52,7 +52,7 @@
 }
 
 .site-description {
-	color: $white;
+	color: $crad-white;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 400;

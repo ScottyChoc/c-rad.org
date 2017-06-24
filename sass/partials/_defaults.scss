@@ -54,7 +54,7 @@ textarea:focus, .button, .gallery img {
 }
 
 a {
-	color: $blue;
+	color: $crad-blue;
 	text-decoration: none;
 	&:focus, &:hover {
 		text-decoration: underline;
@@ -307,7 +307,7 @@ input {
 
 button {
 	&:focus, &:hover {
-		background-color: $blue;
+		background-color: $crad-blue;
 		color: #fff;
 	}
 }
@@ -315,19 +315,19 @@ button {
 input {
 	&[type="button"] {
 		&:focus, &:hover {
-			background-color: $blue;
+			background-color: $crad-blue;
 			color: #fff;
 		}
 	}
 	&[type="reset"] {
 		&:focus, &:hover {
-			background-color: $blue;
+			background-color: $crad-blue;
 			color: #fff;
 		}
 	}
 	&[type="submit"] {
 		&:focus, &:hover {
-			background-color: $blue;
+			background-color: $crad-blue;
 			color: #fff;
 		}
 	}
@@ -335,7 +335,7 @@ input {
 
 .button {
 	&:focus, &:hover {
-		background-color: $blue;
+		background-color: $crad-blue;
 		color: #fff;
 	}
 }

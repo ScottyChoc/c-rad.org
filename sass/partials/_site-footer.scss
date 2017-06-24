@@ -2,25 +2,55 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	background-color: #fff;
+	color: $crad-white;
+	background-color: $crad-blue;
 	border-top: 1px solid #eee;
 	font-size: 16px;
 	font-size: 1.6rem;
 	line-height: 1;
-	padding: 60px 0;
+	padding: 4rem 0;
 	// text-align: center;
-	p {
-		margin-bottom: 0;
+
+	a {
+		color: $crad-white;
+		text-decoration: none;
+		&:focus, &:hover {
+			text-decoration: underline;
+		}
 	}
-	input, select, textarea {
-		background-color: #fff;
-		border: 1px solid #ddd;
-		color: #333;
-		font-size: 18px;
-		font-size: 1.8rem;
-		font-weight: 400;
-		padding: 4px;
+	p {
+		// line-height: 1.25;
+		margin-bottom: .5em;
+	}
+	input {
+		margin-bottom: .5em;
+		&[type="email"] {
+			margin-top: .5em;
+			font-size: 16px;
+			font-size: 1.6rem;
+			padding: .5em;
+			background-color: #eee;
+			// max-width: 10em;
+		}
+		&[type="submit"] {
+			font-size: 16px;
+			font-size: 1.6rem;
+			color: #333;
+			padding: .5em;
+			background-color: #ddd;
+			&:focus, &:hover {
+				color: #222;
+				background-color: #ccc;
+			}
+		}
+
+	}
+
+
+	h4.footer-logo {
 		width: 100%;
+		text-indent: -9999px;
+		background: top left / contain no-repeat;
 	}
 }
 
@@ -36,8 +66,8 @@
 	text-align: left;
 	li {
 		display: inline-block;
-		margin: 12px;
-		margin: 1.2rem;
+		margin: 6px;
+		margin: 0.6rem;
 	}
 	a, svg {
 		display: block;
@@ -68,8 +98,8 @@
 
 .facebook:hover, .twitter:hover, .instagram:hover {
 	border-radius: 100%;
-	color: #fff;
-	fill: #fff;
+	color: $crad-blue;
+	fill: $crad-blue;
 	-webkit-transform: scale(1.25);
 	transform: scale(1.25);
 	// -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
@@ -78,27 +108,11 @@
 	// transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
 
-.facebook {
-	color: $blue;
-	fill: $blue;
+.facebook, .twitter, .instagram {
+	color: $crad-white;
+	fill: $crad-white;
 	&:hover {
-		background: $blue;
-	}
-}
-
-.twitter {
-	color: $blue;
-	fill: $blue;
-	&:hover {
-		background: $blue;
-	}
-}
-
-.instagram {
-	color: $blue;
-	fill: $blue;
-	&:hover {
-		background: $blue;
+		background: $crad-white;
 	}
 }
 

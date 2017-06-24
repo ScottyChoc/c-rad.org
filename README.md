@@ -4,7 +4,8 @@ C-RAD child theme for the Genesis framework
 
 TO DO:
 
-* style footer
+* ~~style footer~~
+* fix janky widths in header
 * style blog page 
 * remove extrs blog meta: author/cat etc
 * fix sponsor container to match front page

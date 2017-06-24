@@ -135,14 +135,14 @@
 		&:focus, &:hover {
 			background-color: #fff;
 			border-width: 0;
-			color: $blue;
+			color: $crad-blue;
 		}
 	}
 	.sub-menu-toggle {
 		&:focus, &:hover {
 			background-color: #fff;
 			border-width: 0;
-			color: $blue;
+			color: $crad-blue;
 		}
 	}
 	.menu-toggle {
@@ -231,8 +231,15 @@
 			}
 		}
 	}
-	.footer-widgets-1, .footer-widgets-2 {
-		margin: 0 auto 40px;
+	.footer-section {
+		margin-bottom: 2em;
+	}
+	.footer-col-group {
+		width: 50%;
+		float: left;
+		.one-fourth {
+			width: 100%;
+		}
 	}
 }
 
@@ -293,5 +300,13 @@
 				margin-bottom: 1em;
 			}
 		}
+	}
+	.footer-section {
+		margin-bottom: 2em;
+	}
+	.footer-col-group {
+		width: 100%;
+		float: none;
+
 	}
 }

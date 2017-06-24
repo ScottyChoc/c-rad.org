@@ -21,8 +21,8 @@
 			display: block;
 			padding: 16px;
 			&:focus, &:hover {
-				color: $white;
-				background-color: $blue;
+				color: $crad-white;
+				background-color: $crad-blue;
 				text-decoration: none;
 			}
 		}
