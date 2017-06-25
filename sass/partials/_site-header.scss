@@ -11,13 +11,13 @@
 /* ## Title Area
 --------------------------------------------- */
 
-.title-area {
-	float: left;
-	padding: 10px 0;
-	// width: 300px;
-}
+// .title-area {
+// 	padding: 10px 0;
+// 	// width: 300px;
+// }
 
 .header-image .title-area {
+	float: left;
 	margin: 0 auto;
 	max-width: 300px;
 	padding: 0;
@@ -28,20 +28,20 @@
 	width: 100%;
 }
 
-.site-title {
-	font-size: 30px;
-	font-size: 3rem;
-	font-weight: 700;
-	line-height: 1.2;
-	a {
-		color: $crad-white;
-		text-decoration: none;
-		&:focus, &:hover {
-			color: $crad-white;
-			text-decoration: none;
-		}
-	}
-}
+// .site-title {
+// 	font-size: 30px;
+// 	font-size: 3rem;
+// 	font-weight: 700;
+// 	line-height: 1.2;
+// 	a {
+// 		color: $crad-white;
+// 		text-decoration: none;
+// 		&:focus, &:hover {
+// 			color: $crad-white;
+// 			text-decoration: none;
+// 		}
+// 	}
+// }
 
 .header-image .site-title > a {
 	background-position: center !important;
@@ -72,13 +72,4 @@
 	.site-title {
 		text-indent: -9999px;
 	}
-}
-
-/* ## Widget Area
---------------------------------------------- */
-
-.site-header .widget-area {
-	float: right;
-	text-align: right;
-	// width: 800px;
 }

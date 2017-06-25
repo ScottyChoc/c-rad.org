@@ -128,8 +128,10 @@
 --------------------------------------------- */
 
 .nav-primary {
-	background-color: #fff;
-	border-top: 1px solid #eee;
+	display: block;
+	// background-color: #fff;
+	// border-top: 1px solid #eee;
+	width: 100%;
 }
 
 /* ## Footer Navigation

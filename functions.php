@@ -104,10 +104,13 @@ function crad_google_site_verification() {
 }
 
 // Add support for custom background.
-add_theme_support( 'custom-background' );
+// add_theme_support( 'custom-background' );
 
 // Add support for after entry widget.
-add_theme_support( 'genesis-after-entry-widget-area' );
+// add_theme_support( 'genesis-after-entry-widget-area' );
+
+// Remove the header right widget area
+unregister_sidebar( 'header-right' );
 
 // Add support for 3-column footer widgets.
 add_theme_support( 'genesis-footer-widgets', 1 );
@@ -118,23 +121,28 @@ add_image_size( 'featured-image', 720, 400, TRUE );
 // Rename primary and secondary navigation menus.
 add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'crad' ), 'secondary' => __( 'Footer Menu', 'crad' ) ) );
 
+// Reposition primary navigation menu.
+remove_action( 'genesis_after_header', 'genesis_do_nav' );
+add_action( 'genesis_header_right', 'genesis_do_nav', 12 );
+
+
 // Reposition the secondary navigation menu.
-remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
+// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
+// add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
 
 // Reduce the secondary navigation menu to one level depth.
-add_filter( 'wp_nav_menu_args', 'crad_secondary_menu_args' );
-function crad_secondary_menu_args( $args ) {
+// add_filter( 'wp_nav_menu_args', 'crad_secondary_menu_args' );
+// function crad_secondary_menu_args( $args ) {
 
-	if ( 'secondary' != $args['theme_location'] ) {
-		return $args;
-	}
+// 	if ( 'secondary' != $args['theme_location'] ) {
+// 		return $args;
+// 	}
 
-	$args['depth'] = 1;
+// 	$args['depth'] = 1;
 
-	return $args;
+// 	return $args;
 
-}
+// }
 
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'crad_author_box_gravatar' );
