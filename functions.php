@@ -1,13 +1,9 @@
 <?php
 /**
- * Genesis Sample.
+ * C-RAD.
  *
- * This file adds functions to the Genesis Sample Theme.
+ * This file adds functions to the C-RAD Theme.
  *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0+
- * @link    http://www.studiopress.com/
  */
 
 // Start the engine.

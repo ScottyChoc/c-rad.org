@@ -4,10 +4,6 @@
  *
  * This file adds the front page template to the C-RAD theme.
  *
- * @package C-RAD
- * @author  StudioPress
- * @license GPL-2.0+
- * @link    http://www.studiopress.com/
  */
 
 // Function to initiate widgetized page render.
