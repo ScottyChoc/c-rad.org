@@ -133,6 +133,7 @@
 	.menu-toggle {
 		float: right;
 		line-height: 22px;
+		margin: 22px;
 		position: relative;
 		// width: 100px;
 		z-index: 1000;
@@ -179,9 +180,24 @@
 			display: block;
 			float: none;
 			position: relative;
-			text-align: left;
-			&:focus, &:hover {
+			// text-align: right;
+			border: 2px solid transparent;
+				&.members-link {
+					a {
+						color: $crad-white;
+						display: block;
+						padding: 20px;
+						border: none;
+						text-decoration: none;
+						&:focus, &:hover {
+							color: $crad-white;
+							background-color: $crad-blue;
+						}
+					}
+				}
+				&:focus, &:hover {
 				position: relative;
+				border-bottom-color: $crad-white;
 			}
 			a {
 				border: none;
@@ -190,6 +206,7 @@
 				width: 100%;
 			}
 		}
+
 		.sub-menu {
 			border: none;
 		}
@@ -229,13 +246,17 @@
 	}
 }
 .nav-primary {
-	width: 100%;
+	// width: 100%;
+	// clear: right;
 }
 
 .menu-primary {
-	clear: both;
+	// width: 100%;
 }
 
+.nav-primary .genesis-responsive-menu {
+	width: 100%;
+}
 
 @media only screen and (max-width: 860px) {
 	body {
@@ -311,5 +332,10 @@
 	}
 	.menu-toggle {
 		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.menu-item {
+		text-align: center;
 	}
 }

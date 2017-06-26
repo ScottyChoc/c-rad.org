@@ -103,12 +103,6 @@ function crad_google_site_verification() {
 	echo '<meta name="google-site-verification" content="KC4TaDXzdyjXtpjZQnzA3FM0itcB2p4l1Zpx30MIwZo">' . "\n";
 }
 
-// Add support for custom background.
-// add_theme_support( 'custom-background' );
-
-// Add support for after entry widget.
-// add_theme_support( 'genesis-after-entry-widget-area' );
-
 // Remove the header right widget area
 unregister_sidebar( 'header-right' );
 
@@ -124,25 +118,6 @@ add_image_size( 'featured-image', 720, 400, TRUE );
 // Reposition primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
 add_action( 'genesis_header_right', 'genesis_do_nav', 12 );
-
-
-// Reposition the secondary navigation menu.
-// remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-// add_action( 'genesis_footer', 'genesis_do_subnav', 5 );
-
-// Reduce the secondary navigation menu to one level depth.
-// add_filter( 'wp_nav_menu_args', 'crad_secondary_menu_args' );
-// function crad_secondary_menu_args( $args ) {
-
-// 	if ( 'secondary' != $args['theme_location'] ) {
-// 		return $args;
-// 	}
-
-// 	$args['depth'] = 1;
-
-// 	return $args;
-
-// }
 
 // Modify size of the Gravatar in the author box.
 add_filter( 'genesis_author_box_gravatar_size', 'crad_author_box_gravatar' );
