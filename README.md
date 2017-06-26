@@ -5,7 +5,7 @@ C-RAD child theme for the Genesis framework
 TO DO:
 
 * ~~style footer~~
-* fix janky widths in header
+* ~~fix janky widths in header~~
 * style blog page 
 * remove extrs blog meta: author/cat etc
 * fix sponsor container to match front page
@@ -17,3 +17,5 @@ TO DO:
 * add woocommerce
 * update manager roles for user and store admin
 * integrate blog/featured content into front page
+* make cards on front page more awesomely responsive
+* fix responsive menu floats
