@@ -135,8 +135,45 @@ function crad_comments_gravatar( $args ) {
 
 }
 
-// Remove the edit link
+// Remove the edit post/page link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
+
+// Remove the archive title and archive description
+remove_action( 'genesis_before_loop', 'genesis_do_blog_template_heading' );
+
+// Customise the post-info function
+add_filter( 'genesis_post_info', 'crad_post_info' );
+function crad_post_info($post_info) {
+	if (!is_page()) {
+		// 'Posted on [post_date] Written by [post_author] [post_comments] [post_edit]'
+		$post_info = '[post_date]';
+		return $post_info;
+	}
+}
+
+add_filter( 'genesis_post_meta', 'crad_post_meta' );
+function crad_post_meta($post_meta) {
+	if (!is_page()) {
+		// '[post_categories]'
+		$post_meta = '';
+		return $post_meta;
+	}
+}
+
+
+
+// Customize the post footer function
+// add_filter('genesis_post_meta', 'wpt_info_filter');
+// function wpt_info_filter($entry_footer) {
+// if (!is_page()) {
+// $entry_footer = '';
+// }
+// return $entry_footer;
+// }
+
+
+
+
 
 // Register widget areas
 genesis_register_sidebar( array(
@@ -150,6 +187,19 @@ genesis_register_sidebar( array(
 	'name'			=> __( 'Manager Sidebar', 'crad' ),
 	'description'	=> __( 'This is the manager sidebar of the members section.', 'crad' ),
 ) );
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Add our custom sponsor loop
 add_action( 'genesis_before_footer', 'crad_sponsor_loop', 5 );

@@ -326,8 +326,10 @@ input {
 		}
 	}
 	&[type="submit"] {
+		background-color: $crad-blue;
 		&:focus, &:hover {
-			background-color: $crad-blue;
+			// transform: translatey(-2px);
+			background-color: $crad-orange;
 			color: #fff;
 		}
 	}
