@@ -2,12 +2,12 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .genesis-nav-menu {
-	clear: both;
+	float: right;
 	font-size: 16px;
 	font-size: 1.6rem;
 	font-weight: 600;
 	line-height: 1;
-	width: 100%;
+	// width: 100%;
 	padding: 22px 0;
 	.menu-item {
 		display: inline-block;
@@ -98,6 +98,13 @@
 		}
 	}
 }
+.nav-primary {
+
+}
+
+.menu-primary {
+	float: right;
+}
 
 /* ## Accessible Menu
 --------------------------------------------- */
@@ -122,16 +129,6 @@
 
 .site-header .genesis-nav-menu li li {
 	margin-left: 0;
-}
-
-/* ## After Header Navigation
---------------------------------------------- */
-
-.nav-primary {
-	display: block;
-	// background-color: #fff;
-	// border-top: 1px solid #eee;
-	width: 100%;
 }
 
 /* ## Footer Navigation

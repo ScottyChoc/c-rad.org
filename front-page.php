@@ -7,8 +7,8 @@
  */
 
 // Function to initiate widgetized page render.
-add_action( 'genesis_meta', 'crad_front_page_init' );
-function crad_front_page_init() {
+	add_action( 'genesis_meta', 'crad_front_page_init' );
+	function crad_front_page_init() {
 
 	// Add front-page body class.
 	add_filter( 'body_class', 'crad_body_class' );
@@ -19,7 +19,7 @@ function crad_front_page_init() {
 	// Add the scripts and styles.
 	add_action( 'wp_enqueue_scripts', 'crad_home_scripts_and_styles' );
 
-	// Rwplace the default loop with the frontpage content.
+	// Replace the default loop with the frontpage content.
 	remove_action( 'genesis_loop', 'genesis_do_loop' );
 	add_action( 'genesis_loop', 'crad_front_page_content' );
 

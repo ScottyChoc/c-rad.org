@@ -58,7 +58,7 @@ function crad_enqueue_scripts_styles() {
 
 }
 
-// Define our responsive menu settings.
+// Define responsive menu settings.
 function crad_responsive_menu_settings() {
 
 	$settings = array(
@@ -119,7 +119,7 @@ add_theme_support( 'genesis-footer-widgets', 1 );
 add_image_size( 'featured-image', 720, 400, TRUE );
 
 // Rename primary and secondary navigation menus.
-add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'crad' ), 'secondary' => __( 'Footer Menu', 'crad' ) ) );
+// add_theme_support( 'genesis-menus', array( 'primary' => __( 'After Header Menu', 'crad' ), 'secondary' => __( 'Footer Menu', 'crad' ) ) );
 
 // Reposition primary navigation menu.
 remove_action( 'genesis_after_header', 'genesis_do_nav' );
@@ -211,3 +211,7 @@ add_action( 'genesis_footer', 'crad_custom_footer' );
 function crad_custom_footer() {
 	include_once( get_stylesheet_directory() . '/lib/custom-footer.php' );
 }
+
+
+
+

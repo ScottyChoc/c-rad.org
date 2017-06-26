@@ -17,12 +17,6 @@
 	.sidebar-primary {
 		width: 300px;
 	}
-	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3 {
-		width: 340px;
-	}
-	.footer-widgets-1 {
-		margin-right: 60px;
-	}
 }
 
 @media only screen and (max-width: 1200px) {
@@ -38,12 +32,6 @@
 	.sidebar-content-sidebar .content, .sidebar-sidebar-content .content, .content-sidebar-sidebar .content {
 		width: 400px;
 	}
-	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3 {
-		width: 300px;
-	}
-	.footer-widgets-1 {
-		margin-right: 30px;
-	}
 }
 
 @media only screen and (max-width: 1023px) {
@@ -57,9 +45,6 @@
 		.content, .content-sidebar-wrap {
 			width: 100%;
 		}
-	}
-	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3 {
-		width: 100%;
 	}
 	.genesis-responsive-menu .genesis-nav-menu .sub-menu {
 		width: 100%;
@@ -80,16 +65,16 @@
 			width: 100%;
 		}
 	}
-	.site-header .widget-area, .title-area {
-		// width: 100%;
-	}
 	.site-header .wrap {
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-	.genesis-nav-menu li, .header-image .title-area {
-		float: none;
+	.genesis-nav-menu li {
+		// float: none;
 	}
+	 .header-image .title-area {
+	 	float: left;
+	 }
 	.site-header {
 		ul.genesis-nav-menu, .search-form {
 			float: none;
@@ -122,9 +107,9 @@
 		visibility: hidden;
 	}
 	.menu-toggle, .sub-menu-toggle {
-		background-color: #fff;
+		background-color: inherit;
 		border-width: 0;
-		color: #333;
+		color: rgba(255, 255, 255, 0.75);
 		display: block;
 		margin: 0 auto;
 		overflow: hidden;
@@ -133,26 +118,27 @@
 	}
 	.menu-toggle {
 		&:focus, &:hover {
-			background-color: #fff;
+			background-color: rgba(255, 255, 255, 0.35);
 			border-width: 0;
-			color: $crad-blue;
+			color: rgba(255, 255, 255, 0.85);
 		}
 	}
 	.sub-menu-toggle {
 		&:focus, &:hover {
 			background-color: #fff;
 			border-width: 0;
-			color: $crad-blue;
+			color: rgba(255, 255, 255, 0.85);
 		}
 	}
 	.menu-toggle {
+		float: right;
 		line-height: 22px;
 		position: relative;
-		width: 100%;
+		// width: 100px;
 		z-index: 1000;
-		border-top: 1px solid #eee;
+		// border-top: 1px solid #eee;
 		&:focus, &:hover {
-			border-top: 1px solid #eee;
+			// border-top: 1px solid #eee;
 		}
 		&::before {
 			font-size: 1.5em;
@@ -242,6 +228,14 @@
 		}
 	}
 }
+.nav-primary {
+	width: 100%;
+}
+
+.menu-primary {
+	clear: both;
+}
+
 
 @media only screen and (max-width: 860px) {
 	body {
@@ -308,5 +302,14 @@
 		width: 100%;
 		float: none;
 
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.header-image .title-area {
+		float: none;
+	}
+	.menu-toggle {
+		float: none;
 	}
 }
