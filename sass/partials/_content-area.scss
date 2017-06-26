@@ -20,7 +20,7 @@
 			}
 		}
 	}
-	.front-page-2, .front-page-3, .sponsor-list {
+	.front-page-2, .front-page-3 {
 		padding: 4em 0;
 		h2 {
 			text-align: center;
@@ -81,7 +81,7 @@
 	.sponsor {
 		line-height: 0;
 		display: inline-block;
-		margin: 0 1vw;
+		margin: 1vw;
 		background-color: #fff;
 		a {
 			display: block;
@@ -249,3 +249,10 @@ p.entry-meta {
 	display: none;
 }
 
+.sponsor-list {
+	padding: 4em 0;
+	h2 {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}

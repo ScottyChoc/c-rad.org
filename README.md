@@ -8,7 +8,7 @@ TO DO:
 * ~~fix janky widths in header~~
 * style blog page 
 * remove extrs blog meta: author/cat etc
-* fix sponsor container to match front page
+* ~~fix sponsor container to match front page~~
 * redirect to members page after login and logout
 * add featured images to blog listings and blog pages
 * add fields to directory- agency/dog/contact
