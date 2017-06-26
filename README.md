@@ -6,7 +6,7 @@ TO DO:
 
 * ~~style footer~~
 * ~~fix janky widths in header~~
-* ~~style blog page ~~
+* ~~style blog page~~
 * ~~remove extrs blog meta: author/cat etc~~
 * ~~fix sponsor container to match front page~~
 * redirect to members page after login and logout
