@@ -103,8 +103,14 @@
 
 .entry {
 	background-color: #fff;
-	margin-bottom: 40px;
-	padding: 70px 80px;
+	margin-bottom: 3em;
+	padding: 3em;
+}
+
+.members .entry {
+	font-size: 1.6rem;
+	padding: 1em 2em;
+	margin-bottom: 1em;
 }
 
 .entry-content {
@@ -181,12 +187,12 @@ p.entry-meta {
 		padding: 8px 12px;
 		text-decoration: none;
 		&:focus, &:hover {
-			background-color: #c3251d;
+			background-color: $crad-blue;
 			color: #fff;
 		}
 	}
 	.active a {
-		background-color: #c3251d;
+		background-color: $crad-orange;
 		color: #fff;
 	}
 }
