@@ -10,7 +10,7 @@
 </div>
 
 <div class="one-fourth footer-section">
-	<h3>Follow Us</h3>
+	<h3>Connect</h3>
 	<ul class="social">
 		<li>
 			<a href="https://www.facebook.com/AvalancheDogs" class="facebook" title="Facebook">
